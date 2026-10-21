@@ -1,0 +1,74 @@
+{
+  "comment": "SARS-CoV-2 人工精选免疫位点知识库(v0.1)。位点信息来源于已发表文献/权威数据库的共识(见README)，用于将突变映射到免疫相关区域；并非穷尽表位。",
+  "evidence": "curated",
+  "proteins": {
+    "S": {
+      "tcell_mhc1": [
+        {"name": "S269-277 (YLQ)", "aa_start": 269, "aa_end": 277, "restriction": "HLA-A*02:01", "note": "免疫优势CD8表位，多个关注株在此逃逸"},
+        {"name": "S417-425", "aa_start": 417, "aa_end": 425, "restriction": "HLA-A*02:01", "note": "保守T细胞表位"},
+        {"name": "S1000-1008", "aa_start": 1000, "aa_end": 1008, "restriction": "HLA-A*01:01", "note": "S2区T细胞表位"}
+      ],
+      "tcell_mhc2": [
+        {"name": "S323-347", "aa_start": 323, "aa_end": 347, "restriction": "多HLA-II", "note": "免疫优势CD4表位区"},
+        {"name": "S781-800", "aa_start": 781, "aa_end": 800, "restriction": "多HLA-II", "note": "融合肽附近CD4表位"}
+      ],
+      "bcell_neutralizing": [
+        {"name": "RBD-I类表位(receptor-binding footprint)", "aa_start": 455, "aa_end": 508, "note": "直接竞争ACE2的中和抗体足迹；K417/E484/N501为关键残基"},
+        {"name": "RBD-II/III类共同位点", "aa_start": 438, "aa_end": 449, "note": "N439/L441/K444等"},
+        {"name": "RBD-II/III类", "aa_start": 472, "aa_end": 499, "note": "F486/Q493/Q498/Y505"},
+        {"name": "NTD超抗原位点(NTD-SD)", "aa_start": 14, "aa_end": 20, "note": "NTD中和抗体识别环"},
+        {"name": "NTD抗原环", "aa_start": 140, "aa_end": 158, "note": "NTD超位点，144/152/245附近缺失与逃逸相关"},
+        {"name": "NTD超位点", "aa_start": 241, "aa_end": 249, "note": "243-245缺失高发区"}
+      ],
+      "key_residues": [
+        {"aa": 417, "label": "K417", "aspect": "ACE2盐桥+I类中和抗体接触", "effect_note": "K417N/T削弱ACE2接触并逃逸I类抗体"},
+        {"aa": 438, "label": "N439", "aspect": "抗体接触", "effect_note": "N439K增强与ACE2氢键并逃逸抗体"},
+        {"aa": 440, "label": "K440", "aspect": "抗体接触", "effect_note": "K440突变见于免疫抑制逃逸进化"},
+        {"aa": 444, "label": "K444", "aspect": "II/III类抗体接触", "effect_note": "K444N/Q/T为BA.2.75/XBB系逃逸位点"},
+        {"aa": 445, "label": "V445", "aspect": "抗体接触", "effect_note": "V445逃逸突变"},
+        {"aa": 446, "label": "G446", "aspect": "抗体接触", "effect_note": "G446S影响II类抗体"},
+        {"aa": 452, "label": "L452", "aspect": "RBM，ACE2界面/抗体", "effect_note": "L452R/Q改变RBD电荷，逃逸抗体、影响感染性"},
+        {"aa": 455, "label": "L455", "aspect": "ACE2接触", "effect_note": "L455F影响结合"},
+        {"aa": 460, "label": "F456", "aspect": "ACE2/抗体", "effect_note": "F456L见于XBB系"},
+        {"aa": 478, "label": "T478", "aspect": "RBM，ACE2界面", "effect_note": "T478K(Delta)改变RBD静电与抗体识别"},
+        {"aa": 484, "label": "E484", "aspect": "RBM核心，多类中和抗体", "effect_note": "E484K/Q为强抗体逃逸位点，逃逸恢复期血清"},
+        {"aa": 486, "label": "F486", "aspect": "ACE2疏水口袋/抗体", "effect_note": "F486P/V(BA.5/XBB)同时影响结合与逃逸"},
+        {"aa": 490, "label": "F490", "aspect": "抗体", "effect_note": "F490S逃逸"},
+        {"aa": 493, "label": "Q493", "aspect": "ACE2接触", "effect_note": "Q493R增强ACE2互补"},
+        {"aa": 498, "label": "Q498", "aspect": "ACE2接触", "effect_note": "Q498R与N501Y协同增强结合"},
+        {"aa": 501, "label": "N501", "aspect": "ACE2核心接触", "effect_note": "N501Y增强ACE2结合/传播(Alpha/Beta/Gamma/BA.2)"},
+        {"aa": 505, "label": "Y505", "aspect": "ACE2/抗体", "effect_note": "Y505H见于逃逸"},
+        {"aa": 614, "label": "D614", "aspect": "S1/S2构象，非表位", "effect_note": "D614G增强刺突稳定性与感染性，全球早期固定"},
+        {"aa": 681, "label": "P681", "aspect": "furin切位旁", "effect_note": "P681H/R影响furin切割效率"},
+        {"aa": 655, "label": "H655", "aspect": "S2'上游", "effect_note": "H655Y(BA.1)影响切割/融合"},
+        {"aa": 701, "label": "A701", "aspect": "S2区", "effect_note": "A701V(Beta)"},
+        {"aa": 950, "label": "N950", "aspect": "S2", "effect_note": "N950S"},
+        {"aa": 1027, "label": "T1027", "aspect": "S2", "effect_note": "T1027I等"}
+      ]
+    },
+    "N": {
+      "tcell_mhc1": [
+        {"name": "N105-113", "aa_start": 105, "aa_end": 113, "restriction": "HLA-B*07:02", "note": "免疫优势CD8表位"},
+        {"name": "N321-345区", "aa_start": 321, "aa_end": 345, "restriction": "多HLA", "note": "CD4/CD8热点，R203/G204等为抗体靶点"}
+      ],
+      "key_residues": [
+        {"aa": 80, "label": "R80", "aspect": "NTD/RNA结合", "effect_note": "R80K常见多态"},
+        {"aa": 203, "label": "R203", "aspect": "linker，主要B/T表位区", "effect_note": "R203K/G204R突变簇影响表位与RNA结合"},
+        {"aa": 204, "label": "G204", "aspect": "linker，表位", "effect_note": "G204R改变电荷"},
+        {"aa": 234, "label": "S235区", "aspect": "SR-rich", "effect_note": "磷酸化区附近"}
+      ]
+    },
+    "ORF3a": {
+      "key_residues": [
+        {"aa": 57, "label": "S57", "aspect": "宿主互作", "effect_note": "Q57H多态"},
+        {"aa": 264, "label": "T223区", "aspect": "膜蛋白", "effect_note": "—"}
+      ]
+    }
+  },
+  "lineage_signatures": [
+    {"lineage": "Alpha B.1.1.7", "mutations": [{"protein": "S", "aa": 501, "alt": "Y"}, {"protein": "S", "aa": 570, "alt": "D"}, {"protein": "S", "aa": 681, "alt": "H"}, {"protein": "S", "aa": 716, "alt": "del"}, {"protein": "S", "aa": 982, "alt": "A"}, {"protein": "S", "aa": 1118, "alt": "H"}, {"protein": "N", "aa": 3, "alt": "X_del"}, {"protein": "N", "aa": 203, "alt": "K"}, {"protein": "N", "aa": 204, "alt": "R"}], "note": "标志性突变集（部分；del为缺失，原型匹配取子集）"},
+    {"lineage": "Delta B.1.617.2", "mutations": [{"protein": "S", "aa": 19, "alt": "R"}, {"protein": "S", "aa": 142, "alt": "del"}, {"protein": "S", "aa": 156, "alt": "del"}, {"protein": "S", "aa": 158, "alt": "G"}, {"protein": "S", "aa": 452, "alt": "R"}, {"protein": "S", "aa": 478, "alt": "K"}, {"protein": "S", "aa": 681, "alt": "R"}, {"protein": "S", "aa": 950, "alt": null}], "note": "L452R+T478K为核心"},
+    {"lineage": "Omicron BA.1", "mutations": [{"protein": "S", "aa": 67, "alt": "V"}, {"protein": "S", "aa": 95, "alt": "I"}, {"protein": "S", "aa": 143, "alt": "del"}, {"protein": "S", "aa": 212, "alt": "del"}, {"protein": "S", "aa": 339, "alt": "D"}, {"protein": "S", "aa": 371, "alt": "L"}, {"protein": "S", "aa": 373, "alt": "P"}, {"protein": "S", "aa": 375, "alt": "F"}, {"protein": "S", "aa": 417, "alt": "N"}, {"protein": "S", "aa": 440, "alt": "K"}, {"protein": "S", "aa": 477, "alt": "N"}, {"protein": "S", "aa": 478, "alt": "K"}, {"protein": "S", "aa": 496, "alt": "S"}, {"protein": "S", "aa": 498, "alt": "R"}, {"protein": "S", "aa": 501, "alt": "Y"}, {"protein": "S", "aa": 505, "alt": "H"}, {"protein": "S", "aa": 655, "alt": "Y"}, {"protein": "S", "aa": 681, "alt": "H"}, {"protein": "S", "aa": 764, "alt": "K"}, {"protein": "S", "aa": 954, "alt": "Q"}, {"protein": "S", "aa": 969, "alt": "K"}, {"protein": "S", "aa": 981, "alt": "P"}], "note": "大量RBD逃逸突变"},
+    {"lineage": "Omicron XBB.1.5", "mutations": [{"protein": "S", "aa": 144, "alt": "del"}, {"protein": "S", "aa": 180, "alt": "V"}, {"protein": "S", "aa": 417, "alt": null}, {"protein": "S", "aa": 445, "alt": "P"}, {"protein": "S", "aa": 456, "alt": "L"}, {"protein": "S", "aa": 460, "alt": "K"}, {"protein": "S", "aa": 478, "alt": "K"}, {"protein": "S", "aa": 486, "alt": "P"}, {"protein": "S", "aa": 493, "alt": "Q"}, {"protein": "S", "aa": 501, "alt": "Y"}, {"protein": "S", "aa": 681, "alt": "H"}, {"protein": "S", "aa": 701, "alt": null}, {"protein": "S", "aa": 732, "alt": null}], "note": "F486P为XBB系标志，强逃逸同时保持ACE2结合"}
+  ]
+}

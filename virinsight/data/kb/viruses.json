@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sarscov2",
+    "name": "SARS-CoV-2",
+    "family": "Coronaviridae (冠状病毒科), 正链RNA",
+    "ref_file": "sarscov2_NC_045512.fasta",
+    "ref_name": "Wuhan-Hu-1, NC_045512.2 (29,903 nt)",
+    "genes_kb": "sarscov2_genes.json",
+    "epitopes_kb": "sarscov2_epitopes.json",
+    "uniprot_focus": {"S": "P0DTC2", "N": "P0DTC9", "M": "P0DTC5", "E": "P0DTC4", "ORF3a": "P0DTC3", "ORF8": "P0DTC7", "ORF7a": "P0DTC8", "ORF6": "P0DTC6"},
+    "pdbs": [
+      {"pdb": "6M0J", "protein": "S / RBD 与 ACE2 复合物", "note": "受体结合界面判断的核心结构"},
+      {"pdb": "6VYB", "protein": "S 刺突蛋白胞外段（开放态三聚体）", "note": "全长刺突构象"},
+      {"pdb": "6VXX", "protein": "S 刺突蛋白胞外段（关闭态三聚体）", "note": "闭合构象"},
+      {"pdb": "6W37", "protein": "N 蛋白二聚化结构域", "note": "核衣壳结构"}
+    ]
+  },
+  {
+    "id": "hiv1",
+    "name": "HIV-1 (HXB2 参考株)",
+    "family": "Retroviridae (逆转录病毒科), 正链RNA二倍体",
+    "ref_file": "hiv1_K03455.fasta",
+    "ref_name": "HIV-1 HXB2, K03455.1",
+    "genes_kb": "hiv1_genes.json",
+    "epitopes_kb": "hiv1_epitopes.json",
+    "uniprot_focus": {"Env_gp160": "P04578", "Gag": "P04591"},
+    "pdbs": [
+      {"pdb": "1AIK", "protein": "HIV-1 蛋白酶", "note": "药物靶点"},
+      {"pdb": "3J3Q", "protein": "HIV-1 衣壳六聚体", "note": "Gag 组装"}
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "comment": "HIV-1(HXB2) 精选免疫/耐药位点知识库(v0.1)，含免疫逃逸与抗病毒药物耐药关键残基，非穷尽。",
+  "evidence": "curated",
+  "proteins": {
+    "Env_gp160": {
+      "tcell_mhc1": [
+        {"name": "gp120 V3-CD8区", "aa_start": 305, "aa_end": 330, "restriction": "多HLA-I", "note": "V3环CTL表位热点"},
+        {"name": "gp41", "aa_start": 590, "aa_end": 620, "restriction": "多HLA-I", "note": "gp41 CTL表位"}
+      ],
+      "bcell_neutralizing": [
+        {"name": "V3环顶点", "aa_start": 305, "aa_end": 318, "note": "PG9/PGT128等糖盾广谱抗体附近；V3决定趋向性"},
+        {"name": "CD4结合位点", "aa_start": 365, "aa_end": 475, "note": "b12/VRC01谱系广谱中和抗体表位"},
+        {"name": "V2/glycan", "aa_start": 156, "aa_end": 200, "note": "V1V2糖盾，PG9/PG16"},
+        {"name": "gp120糖基化盾", "aa_start": 275, "aa_end": 448, "note": "2G12/PGT121家族识别糖肽"},
+        {"name": "MPER", "aa_start": 660, "aa_end": 683, "note": "gp41膜近端区，2F5/4E10/10E8广谱中和表位"}
+      ],
+      "key_residues": [
+        {"aa": 102, "label": "N102糖基化", "aspect": "V1糖盾", "effect_note": "糖位增减改变中和敏感性"},
+        {"aa": 301, "label": "N301", "aspect": "V3糖盾", "effect_note": "高甘露糖位，PGT128接触"},
+        {"aa": 332, "label": "N332", "aspect": "gp120糖位", "effect_note": "N332糖为PGT121/2G12广谱抗体关键锚点，N332突变显著逃逸"},
+        {"aa": 384, "label": "D368区/CD4bs", "aspect": "CD4结合", "effect_note": "CD4结合口袋残基突变影响感染与CD4bs抗体"},
+        {"aa": 425, "label": "G459附近", "aspect": "CD4bs", "effect_note": "VRC01接触"},
+        {"aa": 662, "label": "MPER", "aspect": "广谱中和表位", "effect_note": "MPER突变逃逸2F5/4E10"},
+        {"aa": 11, "label": "gp120 N端糖位", "aspect": "糖盾", "effect_note": "—"}
+      ]
+    },
+    "Gag": {
+      "tcell_mhc1": [
+        {"name": "SLYNTVATL (p17 77-85)", "aa_start": 77, "aa_end": 85, "restriction": "HLA-A*02:01", "note": "HIV最知名免疫优势CD8表位，逃逸突变常见"},
+        {"name": "p24 HLA-B*27 KK10", "aa_start": 263, "aa_end": 272, "restriction": "HLA-B*27:05", "note": "KRWIILGLNK，逃逸(R264K)与疾病控制相关"},
+        {"name": "p24 HLA-B*57 TW10", "aa_start": 308, "aa_end": 317, "restriction": "HLA-B*57/58:01", "note": "TSTLQEQIGW，逃逸与病毒适应度代价相关"}
+      ],
+      "key_residues": [
+        {"aa": 77, "label": "p17 S77", "aspect": "SLYNTVATL表位", "effect_note": "S77逃逸突变（如S77R）逃避A*02"},
+        {"aa": 264, "label": "p24 R264", "aspect": "KK10表位", "effect_note": "R264K逃逸B*27，需代偿突变"},
+        {"aa": 310, "label": "p24 T310", "aspect": "TW10表位", "effect_note": "T242X(T310)逃逸B*57"}
+      ]
+    },
+    "Nef": {
+      "key_residues": [
+        {"aa": 57, "label": "MHC-I下调基序", "aspect": "MHC-I内化", "effect_note": "该区域突变可破坏MHC-I下调而保留CD4下调"},
+        {"aa": 164, "label": "酸性簇", "aspect": "CD4/tetherin下调", "effect_note": "EEE酸性簇影响连接蛋白结合"}
+      ]
+    },
+    "Pol": {
+      "key_residues": [
+        {"aa": 30, "label": "PR D30N", "aspect": "蛋白酶抑制剂耐药", "effect_note": "D30N为奈非那韦耐药标志"},
+        {"aa": 90, "label": "PR L90M", "aspect": "蛋白酶抑制剂耐药", "effect_note": "L90M多PI耐药"},
+        {"aa": 184, "label": "RT M184V", "aspect": "NRTI耐药", "effect_note": "M184V高水平拉米夫定/恩曲他滨耐药"},
+        {"aa": 215, "label": "RT T215", "aspect": "NRTI耐药", "effect_note": "T215Y/F胸苷类似物突变"},
+        {"aa": 103, "label": "RT K103N", "aspect": "NNRTI耐药", "effect_note": "K103N对依非韦伦/奈韦拉平耐药"},
+        {"aa": 155, "label": "IN N155H", "aspect": "INSTI耐药", "effect_note": "整合酶抑制剂耐药"},
+        {"aa": 263, "label": "IN R263K", "aspect": "INSTI耐药", "effect_note": "多替拉韦耐药通路"}
+      ]
+    }
+  }
+}

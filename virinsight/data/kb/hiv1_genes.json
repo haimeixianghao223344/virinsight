@@ -1,0 +1,27 @@
+[
+  {"name": "Gag", "nt_start": 790, "nt_end": 2292, "strand": 1, "phase": 3, "function": "前体多聚蛋白Pr55gag，切割为基质(MA p17)、衣壳(CA p24)、p7、p6，组装病毒颗粒", "category": "structural", "immune_relevance": 4, "immuno_note": "CA/MA含多个免疫优势CD8表位（如p17 SLYNTVATL），CTL早期靶点", "domains": [
+    {"name": "MA_p17", "aa_start": 1, "aa_end": 132, "note": "基质，膜靶向，含p17 SLYNTVATL(A*02表位)"},
+    {"name": "CA_p24", "aa_start": 133, "aa_end": 363, "note": "衣壳，高度免疫原性CTL靶点"},
+    {"name": "p7_NC", "aa_start": 378, "aa_end": 432, "note": "核衣壳，锌指"},
+    {"name": "p6", "aa_start": 449, "aa_end": 512, "note": "出芽/Vpr包装"}
+  ]},
+  {"name": "Pol", "nt_start": 2085, "nt_end": 5096, "strand": 1, "phase": 2, "function": "经Gag-Pol核糖体移码生成，切割为蛋白酶PR、逆转录酶RT、整合酶IN", "category": "replication", "immune_relevance": 3, "immuno_note": "药物靶点密集；RT/IN含CTL表位，耐药突变是主要监测内容", "domains": [
+    {"name": "PR", "aa_start": 1, "aa_end": 99, "note": "天冬氨酸蛋白酶，D25催化；耐药位点如D30N/V32/L90M"},
+    {"name": "RT", "aa_start": 100, "aa_end": 658, "note": "逆转录酶；M184V/K103N/Y181C/T215等耐药突变"},
+    {"name": "RNaseH", "aa_start": 560, "aa_end": 658, "note": "RNA酶H"},
+    {"name": "IN", "aa_start": 659, "aa_end": 947, "note": "整合酶；N155/R263等INSTI耐药"}
+  ]},
+  {"name": "Env_gp160", "nt_start": 6225, "nt_end": 8795, "strand": 1, "phase": 3, "function": "gp160前体切割为表面亚基gp120(受体/共受体结合)与跨膜亚基gp41(膜融合)", "category": "structural_antigen", "immune_relevance": 5, "immuno_note": "中和抗体唯一靶标；gp120 V1-V5高变环糖盾驱动逃逸，V3决定共受体(R5/X4)趋向", "domains": [
+    {"name": "gp120", "aa_start": 1, "aa_end": 511, "note": "表面糖蛋白，CD4结合，V1-V5高变环/糖基化盾"},
+    {"name": "V3", "aa_start": 296, "aa_end": 331, "note": "V3环，共受体趋向性与中和热点"},
+    {"name": "CD4bs", "aa_start": 365, "aa_end": 475, "note": "CD4结合位点(bNAb表位)"},
+    {"name": "gp41", "aa_start": 512, "aa_end": 856, "note": "跨膜融合亚基，FP/HR1/HR2，MPER为广谱中和表位"},
+    {"name": "MPER", "aa_start": 660, "aa_end": 683, "note": "膜近端外部区，2F5/4E10/10E8表位"}
+  ], "glycosylation_sites": []},
+  {"name": "Tat", "nt_start": 5831, "nt_end": 8465, "strand": 1, "phase": 1, "function": "反式激活蛋白，结合TAR促进转录（经多重剪接mRNA）", "category": "regulatory", "immune_relevance": 3, "immuno_note": "早期蛋白，CTL靶点，影响潜伏"},
+  {"name": "Rev", "nt_start": 5970, "nt_end": 8653, "strand": 1, "phase": 2, "function": "结合RRE介导未剪接RNA核输出（经多重剪接）", "category": "regulatory", "immune_relevance": 2, "immuno_note": "—"},
+  {"name": "Nef", "nt_start": 8797, "nt_end": 9417, "strand": 1, "phase": 1, "function": "多功效应因子，下调CD4与MHC-I、增强感染性与致病性", "category": "immune_antagonist", "immune_relevance": 5, "immuno_note": "直接下调MHC-I逃避CTL，是强免疫逃逸决定因子及早期CTL靶点"},
+  {"name": "Vif", "nt_start": 5041, "nt_end": 5619, "strand": 1, "phase": 1, "function": "拮抗APOBEC3G抗病毒因子", "category": "immune_antagonist", "immune_relevance": 4, "immuno_note": "降解宿主APOBEC3G，破坏其突变防御"},
+  {"name": "Vpr", "nt_start": 5559, "nt_end": 5850, "strand": 1, "phase": 3, "function": "诱导G2阻滞、核输入、辅助整合", "category": "accessory", "immune_relevance": 2, "immuno_note": "—"},
+  {"name": "Vpu", "nt_start": 6062, "nt_end": 6310, "strand": 1, "phase": 2, "function": "下调CD4与tetherin(BST-2)，促进出芽", "category": "immune_antagonist", "immune_relevance": 4, "immuno_note": "拮抗宿主限制因子tetherin"}
+]

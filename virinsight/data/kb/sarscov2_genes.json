@@ -1,0 +1,22 @@
+[
+  {"name": "ORF1ab", "nt_start": 266, "nt_end": 21555, "strand": 1, "phase": 1, "function": "复制酶多聚蛋白（经核糖体移码生成ORF1a/1ab），切割为16个非结构蛋白nsp1-16，负责RNA合成、校对、加帽及对宿主干扰素的拮抗(nsp1/3/13/15/16等)", "category": "replication", "immune_relevance": 3, "immuno_note": "多个nsp拮抗I型干扰素通路；保守但突变通常不直接改变抗原表位"},
+  {"name": "S", "nt_start": 21563, "nt_end": 25384, "strand": 1, "phase": 1, "function": "刺突糖蛋白，结合ACE2受体并介导膜融合，是中和抗体主要靶标", "category": "structural_antigen", "immune_relevance": 5, "immuno_note": "核心免疫原：RBD是中和抗体主要表位；NTD为超抗原表位；突变可致抗体逃逸与传播力/毒力改变", "domains": [
+    {"name": "NTD", "aa_start": 14, "aa_end": 305, "note": "N端结构域，存在NTD超抗原表位"},
+    {"name": "RBD", "aa_start": 319, "aa_end": 541, "note": "受体结合结构域，中和抗体主要靶点"},
+    {"name": "RBM", "aa_start": 437, "aa_end": 508, "note": "受体结合基序，直接接触ACE2，逃逸热点"},
+    {"name": "FP", "aa_start": 788, "aa_end": 806, "note": "融合肽"},
+    {"name": "HR1", "aa_start": 912, "aa_end": 984, "note": "七肽重复区1"},
+    {"name": "S2", "aa_start": 686, "aa_end": 1273, "note": "S2融合亚基"},
+    {"name": "cleavage_S1S2", "aa_start": 680, "aa_end": 686, "note": "furin切位 RRAR，影响加工与感染力"},
+    {"name": "TM", "aa_start": 1213, "aa_end": 1237, "note": "跨膜区"}
+  ], "glycosylation_sites": [61, 74, 122, 149, 165, 173, 188, 234, 282, 331, 343, 363, 603, 616, 657, 709, 717, 801, 1074, 1098, 1134, 1158, 1173, 1194]},
+  {"name": "ORF3a", "nt_start": 25393, "nt_end": 26220, "strand": 1, "phase": 2, "function": "孔道样跨膜蛋白，促炎症小体激活、调控出芽", "category": "accessory", "immune_relevance": 3, "immuno_note": "促炎症与T细胞应答靶点"},
+  {"name": "E", "nt_start": 26245, "nt_end": 26472, "strand": 1, "phase": 2, "function": "包膜蛋白，离子通道活性，参与组装释放与致病", "category": "structural", "immune_relevance": 2, "immuno_note": "小膜蛋白，抗体靶点证据有限"},
+  {"name": "M", "nt_start": 26523, "nt_end": 27191, "strand": 1, "phase": 3, "function": "膜糖蛋白，病毒组装的核心支架", "category": "structural", "immune_relevance": 2, "immuno_note": "T细胞应答靶点"},
+  {"name": "ORF6", "nt_start": 27202, "nt_end": 27387, "strand": 1, "phase": 1, "function": "干扰素拮抗蛋白，阻断STAT1核输入", "category": "immune_antagonist", "immune_relevance": 4, "immuno_note": "直接抑制宿主I型干扰素信号"},
+  {"name": "ORF7a", "nt_start": 27394, "nt_end": 27759, "strand": 1, "phase": 1, "function": "跨膜免疫调节蛋白，诱导ER应激", "category": "accessory", "immune_relevance": 3, "immuno_note": "T细胞应答靶点"},
+  {"name": "ORF7b", "nt_start": 27756, "nt_end": 27887, "strand": 1, "phase": 3, "function": "小跨膜蛋白", "category": "accessory", "immune_relevance": 1, "immuno_note": "功能研究较少"},
+  {"name": "ORF8", "nt_start": 27894, "nt_end": 28259, "strand": 1, "phase": 2, "function": "糖基化分泌蛋白，下调MHC-I、调节免疫逃逸", "category": "immune_antagonist", "immune_relevance": 4, "immuno_note": "可下调宿主MHC-I并干扰抗原呈递，与免疫逃逸相关"},
+  {"name": "N", "nt_start": 28274, "nt_end": 29533, "strand": 1, "phase": 2, "function": "核衣壳蛋白，包裹RNA，调控复制，强免疫原", "category": "structural_antigen", "immune_relevance": 4, "immuno_note": "高表达强免疫原，含多个T细胞表位；血清学诊断靶点，不直接介导抗体中和"},
+  {"name": "ORF10", "nt_start": 29558, "nt_end": 29674, "strand": 1, "phase": 1, "function": "推定小蛋白，编码证据存争议", "category": "accessory", "immune_relevance": 1, "immuno_note": "编码与功能证据弱"}
+]
